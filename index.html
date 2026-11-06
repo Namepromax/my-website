@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الرئيسية - دليل فعاليات الجامعة الافتراضية</title>
+<!-- bootstrap rtl, Tajawal font, our css -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body data-page="home">
+<!-- header / navbar -->
+<header>
+<nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><img class="brand-logo" src="assets/img/logo.svg" alt="شعار الدليل">دليل الفعاليات</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="القائمة"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+        <li class="nav-item"><a class="nav-link" href="event.html">تفاصيل الفعالية</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+        <li class="nav-item"><button class="btn btn-sm btn-warning me-lg-2" id="themeBtn" type="button">الوضع الداكن</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main>
+<!-- students -->
+<section class="team-section" aria-label="المشاركون في المشروع">
+  <div class="container">
+    <h2 class="h3 text-center mb-4">المشاركون في المشروع</h2>
+    <div class="row g-4 justify-content-center">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <article class="member card h-100 text-center p-4">
+        <img class="member-photo mx-auto mb-3" src="assets/img/avatar1.svg" alt="صورة أمير باشي">
+        <h3 class="h5 mb-2">أمير باشي</h3>
+        <span class="badge bg-primary fs-6">ID: 373869</span>
+      </article>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <article class="member card h-100 text-center p-4">
+        <img class="member-photo mx-auto mb-3" src="assets/img/avatar2.svg" alt="صورة عمار منصور">
+        <h3 class="h5 mb-2">عمار منصور</h3>
+        <span class="badge bg-primary fs-6">ID: 347251</span>
+      </article>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <article class="member card h-100 text-center p-4">
+        <img class="member-photo mx-auto mb-3" src="assets/img/avatar3.svg" alt="صورة خديجة غبوش">
+        <h3 class="h5 mb-2">خديجة غبوش</h3>
+        <span class="badge bg-primary fs-6">ID: 201894</span>
+      </article>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <article class="member card h-100 text-center p-4">
+        <img class="member-photo mx-auto mb-3" src="assets/img/avatar4.svg" alt="صورة عبد الكريم باشي">
+        <h3 class="h5 mb-2">عبد الكريم باشي</h3>
+        <span class="badge bg-primary fs-6">ID: 373901</span>
+      </article>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- featured events slider -->
+<section class="slider" aria-label="فعاليات بارزة">
+  <button class="arrow" id="next" type="button" aria-label="السابق">&rsaquo;</button>
+  <div id="slides"></div>
+  <button class="arrow" id="prev" type="button" aria-label="التالي">&lsaquo;</button>
+</section>
+<!-- categories -->
+<section class="container py-4"><h2 class="h3 mb-3">تصنيفات سريعة</h2><div id="chips" class="d-flex flex-wrap gap-2"></div></section>
+<!-- latest events -->
+<section class="container pb-4"><h2 class="h3 mb-3">أحدث الفعاليات</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="latest"></div>
+  <div class="text-center mt-4"><a class="btn btn-warning" href="events.html">عرض كل الفعاليات</a></div></section>
+</main>
+<!-- footer -->
+<footer class="site-footer py-4">
+  <div class="container"><div class="row g-3">
+    <div class="col-md-4"><h5 class="text-white">دليل الفعاليات</h5><p class="small mb-0">منصة موحدة لفعاليات الجامعة الافتراضية.</p></div>
+    <div class="col-md-4"><h5 class="text-white">التواصل</h5><p class="small mb-0">events@virtual-uni.edu<br>الأحد - الخميس: 8 ص - 4 م</p></div>
+    <div class="col-md-4"><h5 class="text-white">تابعنا</h5>
+      <a href="https://facebook.com" target="_blank" rel="noopener">فيسبوك</a> |
+      <a href="https://x.com" target="_blank" rel="noopener">إكس</a> |
+      <a href="https://instagram.com" target="_blank" rel="noopener">إنستغرام</a></div>
+  </div>
+  <hr><p class="small text-center mb-0">© 2026 دليل فعاليات الجامعة الافتراضية - جميع الحقوق محفوظة | <a href="about.html">سياسات النشر</a></p></div>
+</footer>
+<button id="toTop" class="btn btn-primary" type="button" aria-label="للأعلى">&uarr;</button>
+<!-- scripts: jQuery, Bootstrap, our code -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

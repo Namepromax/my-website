@@ -1,0 +1,42 @@
+/* styles.css - small overrides on top of Bootstrap. Colors: teal #0e7c86, amber #f0a92e. Font: Tajawal */
+:root{ --brand:#0e7c86; --brand2:#f0a92e; --ink:#1c2750; --soft:#eef3f7; }
+body{ font-family:'Tajawal',Cairo,sans-serif; background:var(--soft); line-height:1.8; }
+[data-bs-theme="dark"]{ --soft:#14192b; }   /* dark mode */
+h1,h2,h3,h4,h5{ font-weight:800; }
+.navbar{ background:var(--ink); }
+.navbar .nav-link{ color:#dfe6f5; border-radius:20px; padding:4px 14px; }
+.navbar .nav-link:hover,.navbar .nav-link.active{ background:var(--brand2); color:var(--ink); font-weight:700; }
+.brand-logo{ width:34px; height:34px; margin-left:8px; }
+/* brand colors for bootstrap buttons */
+.btn-primary{ --bs-btn-bg:var(--brand); --bs-btn-border-color:var(--brand); --bs-btn-hover-bg:var(--ink); --bs-btn-hover-border-color:var(--ink); --bs-btn-active-bg:var(--ink); }
+.btn-warning{ --bs-btn-bg:var(--brand2); --bs-btn-border-color:var(--brand2); --bs-btn-color:var(--ink); }
+/* slider */
+.slider{ position:relative; height:360px; overflow:hidden; background:var(--ink); }
+.slide{ position:absolute; inset:0; display:none; background-size:cover; background-position:center; }
+.slide.on{ display:block; }
+.slide::before{ content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(28,39,80,.92),rgba(28,39,80,.45)); }
+.slide .container{ position:relative; height:100%; display:flex; flex-direction:column; justify-content:center; color:#fff; }
+.slide h2{ color:#fff; font-size:2rem; }
+.slide p{ max-width:560px; color:#dfe6f5; }
+.arrow{ position:absolute; top:50%; transform:translateY(-50%); z-index:5; width:42px; height:42px; border:0; border-radius:50%; background:rgba(255,255,255,.2); color:#fff; font-size:1.4rem; }
+.arrow:hover{ background:var(--brand2); color:var(--ink); }
+#next{ right:12px; } #prev{ left:12px; }
+/* cards */
+.card{ border-radius:14px 14px 14px 4px; overflow:hidden; height:100%; }
+.card-img-top{ height:170px; object-fit:cover; }
+.badge-today{ position:absolute; top:10px; right:10px; }   /* badge position */
+.card-wrap{ position:relative; }
+.gallery img{ border-radius:10px; height:110px; width:100%; object-fit:cover; }
+.avatar{ width:84px; height:84px; margin:0 auto 8px; display:block; }
+.map-img{ width:100%; border-radius:10px; }
+.err{ color:#dc3545; font-size:.85rem; display:block; min-height:1.2em; }
+.site-footer{ background:var(--ink); color:#c9d3ea; margin-top:40px; }
+.site-footer a{ color:#c9d3ea; text-decoration:none; }
+.site-footer a:hover{ color:var(--brand2); }
+#toTop{ position:fixed; bottom:20px; left:20px; display:none; z-index:60; }  /* back to top button */
+@media (max-width:767px){ .slider{ height:420px; } .slide h2{ font-size:1.5rem; } }
+/* students section */
+.team-section{ background:var(--bs-body-bg); padding:48px 0; border-bottom:4px solid var(--brand2); }
+.member{ transition:transform .2s; }
+.member:hover{ transform:translateY(-4px); }
+.member-photo{ width:110px; height:110px; border-radius:50%; object-fit:cover; border:4px solid var(--brand2); display:block; }
